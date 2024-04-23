@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  gradle:
+    container_name: gradle
+    hostname: gradle
+    build: ./docker/gradle
+    tty: true
+    volumes:
+      - ./volume:/usr/src
+
