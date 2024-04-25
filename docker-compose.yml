@@ -4,6 +4,7 @@ services:
     container_name: gradle
     hostname: gradle
     build: ./docker/gradle
+    command: /bin/bash
     tty: true
     volumes:
       - ./volume:/usr/src
